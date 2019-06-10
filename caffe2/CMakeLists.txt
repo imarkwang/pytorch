@@ -849,7 +849,7 @@ if (USE_OPENMP AND OPENMP_FOUND)
   target_link_libraries(caffe2 PRIVATE ${OpenMP_CXX_LIBRARIES})
 endif()
 
-target_link_libraries(caffe2 PUBLIC c10)
+target_link_libraries(caffe2 PUBLIC c10 lmdb)
 target_link_libraries(caffe2 PUBLIC ${Caffe2_PUBLIC_DEPENDENCY_LIBS})
 target_link_libraries(caffe2 PRIVATE ${Caffe2_DEPENDENCY_LIBS})
 target_link_libraries(caffe2 PRIVATE ${Caffe2_DEPENDENCY_WHOLE_LINK_LIBS})
